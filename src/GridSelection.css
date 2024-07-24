@@ -1,0 +1,118 @@
+/* File: src/GridSelection.css */
+
+.grid-selection-container {
+  display: flex;
+  gap: 20px;
+}
+
+.left-panel {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.controls {
+  flex-grow: 1;
+}
+
+.control-group {
+  margin-bottom: 15px;
+}
+
+.control-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+}
+
+.input-group input[type='number'] {
+  width: 50px;
+  margin-right: 5px;
+}
+
+.input-group button {
+  width: 30px;
+  height: 30px;
+  font-size: 16px;
+  line-height: 1;
+  margin: 0 2px;
+}
+
+.control-group input[type='text'],
+.control-group select {
+  width: 100%;
+  margin-top: 5px;
+}
+
+.grid-container {
+  display: grid;
+  border: 1px solid #ccc;
+}
+
+.grid-cell {
+  box-sizing: border-box;
+  border: 1px solid #eee;
+}
+
+.grid-cell.selected {
+  background-color: rgba(0, 123, 255, 0.1);
+}
+
+.grid-cell.invalid {
+  background-color: rgba(255, 255, 0, 0.3);
+}
+
+.grid-cell.selected.top {
+  border-top: 2px dashed #007bff;
+}
+
+.grid-cell.selected.bottom {
+  border-bottom: 2px dashed #007bff;
+}
+
+.grid-cell.selected.left {
+  border-left: 2px dashed #007bff;
+}
+
+.grid-cell.selected.right {
+  border-right: 2px dashed #007bff;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.grid-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.grid-button {
+  background-color: #007bff;
+  color: white;
+}
+
+.grid-button:hover {
+  background-color: #0056b3;
+}
+
+.reset-button {
+  background-color: #dc3545;
+}
+
+.reset-button:hover {
+  background-color: #c82333;
+}
